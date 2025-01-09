@@ -1,0 +1,32 @@
+.bubble-menu {
+  height: 35px;
+  display: flex;
+  gap: 4px;
+  background: #212121;
+  border-radius: 10px;
+  padding-left: 4px;
+  align-items: center;
+  border: 1px solid #ffffff26;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bubble-menu .menu-item {
+  background-color: transparent;
+  border: none;
+  border-radius: 0.4rem;
+  color: #fff;
+  cursor: pointer;
+  height: 1.75rem;
+  width: 1.75rem;
+}
+
+.bubble-menu .menu-item svg {
+  fill: currentColor;
+  height: 100%;
+  width: 100%;
+}
+
+.bubble-menu .menu-item:hover,
+.bubble-menu .menu-item.is-active {
+  background-color: #303030;
+}

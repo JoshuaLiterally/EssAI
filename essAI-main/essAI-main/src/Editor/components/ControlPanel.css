@@ -1,0 +1,107 @@
+.control-panel {
+  background-color: #171717;
+  color: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.top-section {
+  display: flex;
+  align-items: center;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  padding-left: 5px;
+}
+
+.menu-options {
+  display: flex;
+  gap: 1rem; /* space-x-4 in Tailwind */
+  color: white;
+  font-size: 14px; /* text-sm in Tailwind */
+}
+
+.home-button {
+  margin-right: 0px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+  border-radius: 50%;
+  width: 38px;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Darken background on hover */
+}
+
+.home-button .ri-home-line {
+  vertical-align: middle;
+}
+
+.title-input {
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid #00000000; /* No border initially */
+  background-color: #00000000;
+  color: white;
+  border-radius: 4px;
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+  width: auto; /* Allow width to be set dynamically */
+  min-width: 50px; /* Set a minimum width */
+  overflow: ellipsis; /* Add ellipsis for overflow */
+}
+
+.title-input:hover,
+.title-input:focus {
+  border-color: #ffffff26; /* Border color on hover and focus */
+}
+
+.title-input:focus {
+  outline: none; /* Remove default outline on focus */
+}
+
+.top-section-right {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+  padding-right: 20px;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+  border-radius: 50%;
+  width: 42px;
+  transition: background-color 0.3s ease;
+}
+
+.icon-button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Darken background on hover */
+}
+
+.profile-picture {
+  padding: 0; 
+}
+
+/* In ControlPanel.css, update profile-img class */
+.profile-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #333; /* Fallback color while loading */
+}
+
+.title-menu-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
